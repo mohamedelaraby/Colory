@@ -14,10 +14,12 @@ class ViewController: UIViewController {
     /*---------------------------[ViewControllwe properaties ]---------------------------------------*/
      var isPurple = false
     
+    @IBOutlet weak var pressButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        pressButton.backgroundColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
     }
 
     /*-------------------[ @OUTLET ACTIONS]-------------------------------------*/
@@ -29,6 +31,7 @@ class ViewController: UIViewController {
             isPurple =  false
         } else {
             view.backgroundColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
+            pressButton.backgroundColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
             isPurple = true
         }
     }
